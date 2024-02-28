@@ -1,3 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
 .title {
-  color: aqua;
+  width: fit-content;
+  margin: 3rem auto;
+  border-bottom: 4px solid #0091ff;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.buttonList {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttonList > button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttonList > button:hover {
+  background-color: #0091ff;
+  color: white;
+}
+
+.foodCardList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem 5rem;
+}
+
+.foodCard {
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.foodCard > img {
+  width: 45%;
+  margin-right: 1rem;
+}
+
+.foodCard > div {
+  width: 100%;
+}
+
+.foodCard-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 4px solid gray;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.foodCard-title div:last-child {
+  color: #0091ff;
 }
